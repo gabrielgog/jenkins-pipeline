@@ -1,7 +1,9 @@
-#!/bin/sh     
-ssh root@46.101.115.48 <  cd /root/test-backend
- git pull origin head
- npm install --production      
- pm2 restart all
- exit      
+#!/bin/bash
+
+ssh root@46.101.115.48 << EOF
+cd /root/test-backend
+git pull origin head
+npm install --production
+pm2 restart all
+exit
 EOF
