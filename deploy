@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ssh -i /root/.ssh/authorized_keys root@46.101.115.48 << EOF
+ssh -i /Users/gabriel/.ssh/id_rsa root@46.101.115.48 << EOF
 cd /root/test-backend
 git pull origin head
 npm install --production
