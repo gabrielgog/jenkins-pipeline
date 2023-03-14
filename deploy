@@ -1,4 +1,4 @@
 #!/bin/sh     
 mkdir -p ~/.ssh
 ssh-keyscan 46.101.115.48 >> ~/.ssh/known_hosts
-ssh -i ~/.ssh/id_rsa root@46.101.115.48 "cd /test-backend && git pull && npm install --production && pm2 restart all"
+ssh -i /root/.ssh/id_rsa root@46.101.115.48 "cd /test-backend && git pull && npm install --production && pm2 restart all"
