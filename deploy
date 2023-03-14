@@ -1,4 +1,4 @@
--#!/bin/sh     
+#!/bin/sh     
 ssh root@46.101.115.48 <  cd /test-backend 
  git pull origin https://github.com/gabrielgog/jenkins-pipeline.git    
  npm install --production      
