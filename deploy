@@ -1,7 +1,7 @@
 -#!/bin/sh     
 ssh root@46.101.115.48 <  cd /test-backend 
- git pull      
+ git pull https://github.com/gabrielgog/jenkins-pipeline.git    
  npm install --production      
- npm start app.js
+ pm2 restart all
  exit      
 EOF
