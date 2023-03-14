@@ -1,4 +1,4 @@
 #!/bin/sh     
-mkdir -p ~/.ssh
 ssh-keyscan 46.101.115.48 >> ~/.ssh/known_hosts
-ssh -i /root/.ssh/id_rsa root@46.101.115.48 "cd /test-backend && git pull && npm install --production && pm2 restart all"
+cat ~/.ssh/id_rsa.pub | ssh root@46.101.115.48 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+ssh root@46.101.115.48 "cd /test-backend && git pull && npm install --production && pm2 restart all"
