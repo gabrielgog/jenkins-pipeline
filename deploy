@@ -2,6 +2,6 @@
 ssh root@46.101.115.48 <  cd /test-backend 
  git pull      
  npm install --production      
- pm2 restart all
+ npm start app.js
  exit      
 EOF
