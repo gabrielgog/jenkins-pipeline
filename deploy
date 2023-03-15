@@ -1,5 +1,5 @@
 #!/bin/sh     
-cd /root/test-backend 
+cd /root/jenkins-pipeline
 git pull origin main
 chown -R jenkins:jenkins /root/jenkins-pipeline
 npm install --production
