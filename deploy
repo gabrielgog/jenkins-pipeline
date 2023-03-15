@@ -1,6 +1,6 @@
 #!/bin/sh     
 ssh root@46.101.115.48 << EOF
-cd /root/test-backend 
+cd /root/jenkins-pipeline
 git pull origin main
 npm install --production      
 pm2 restart all
