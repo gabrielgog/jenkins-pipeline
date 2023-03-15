@@ -1,5 +1,5 @@
 #!/bin/sh     
-# mkdir /jenkins-pipeline
+mkdir /var/jenkins_home/workspace/test-project
 # cd /jenkins-pipeline
 git pull origin main
 # chown -R jenkins:jenkins /root/jenkins-pipeline
