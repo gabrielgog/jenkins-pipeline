@@ -1,6 +1,7 @@
 #!/bin/sh     
 cd /root/test-backend 
 git pull origin main
+chown -R jenkins:jenkins /root/test-backend
 npm install --production --prefix /root/test-backend
 pm2 restart all
 exit      
