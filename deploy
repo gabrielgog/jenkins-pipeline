@@ -1,8 +1,8 @@
 #!/bin/sh     
-mkdir /jenkins-pipeline
-cd /jenkins-pipeline
+# mkdir /jenkins-pipeline
+# cd /jenkins-pipeline
 git pull origin main
-chown -R jenkins:jenkins /root/jenkins-pipeline
+# chown -R jenkins:jenkins /root/jenkins-pipeline
 npm install --production
 exit      
 EOF
