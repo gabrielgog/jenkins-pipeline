@@ -2,6 +2,6 @@
 cd /root/test-backend 
 git pull origin main
 chown -R jenkins:jenkins /root/jenkins-pipeline
-npm install --production --prefix /root/jenkins-pipeline
+npm install --production
 exit      
 EOF
